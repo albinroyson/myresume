@@ -20,15 +20,23 @@ const Header = () => {
 
         </LeftDiv>
         <RightDiv>
+        <MenuItem>
         <Menu>
         Resume
         </Menu>
+        </MenuItem>
+        <MenuItem>
         <Menu>
     Projects
         </Menu>
+        </MenuItem>
+        <MenuItem>
         <Menu>
     Contacts
         </Menu>
+        
+        </MenuItem>
+ 
 
         </RightDiv>
        </HeaderContainer>
@@ -60,7 +68,8 @@ font-size: 15px;
   
 `;
 const RightDiv = styled.div`
-
+display: flex;
+justify-content: end;
   
 `;
 const Deg = styled.p`
@@ -68,9 +77,14 @@ const Deg = styled.p`
 `;
 const Menu =styled.span`
  font-size: 15px;
- margin-right: 20px;
- border-right:1px black
+
+padding-right: 20px;
  
+ `
+ const MenuItem=styled.div`
+
+ border-right: 1px solid #000;
+ margin-right: 20px;
  `
 
 
